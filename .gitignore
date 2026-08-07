@@ -1,0 +1,13 @@
+
+# Dependencies
+node_modules/
+
+# Playwright artifacts
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# BDD generated specs (recreated by bddgen)
+.features-gen/

@@ -1,0 +1,34 @@
+{
+  "name": "playwright-bdd-demoshop",
+  "version": "1.0.0",
+  "description": "BDD test automation with Playwright + Cucumber (playwright-bdd) — Page Object Model for Tricentis Demo Web Shop & Dummy REST API",
+  "private": true,
+  "scripts": {
+    "test": "bddgen && playwright test",
+    "test:demoshop": "bddgen && playwright test features/demoshop --project=chromium",
+    "test:api": "bddgen && playwright test features/api --project=chromium --workers=1",
+    "test:headed": "bddgen && playwright test features/demoshop --project=chromium --headed",
+    "test:ui": "bddgen && playwright test --ui",
+    "bddgen": "bddgen",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen https://demowebshop.tricentis.com"
+  },
+  "keywords": [
+    "playwright",
+    "bdd",
+    "cucumber",
+    "playwright-bdd",
+    "pom",
+    "e2e",
+    "demo-web-shop",
+    "tricentis",
+    "api-testing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.0",
+    "playwright-bdd": "^9.2.0"
+  }
+}
