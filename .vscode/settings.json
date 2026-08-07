@@ -1,5 +1,13 @@
 {
   "cucumber.glue": [
     "steps/**/*.ts"
-  ]
+  ],
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ]
+    }
+  }
 }
